@@ -222,7 +222,7 @@ if __name__ == '__main__':
 
     X_train, X_test = doc_to_vector(X_train, X_test)
 
-    X_train, X_test = select_feature(40000, X_train, y_train, X_test)
+    X_train, X_test = select_feature(1000, X_train, y_train, X_test)
 
     clf = linear_svc_classifier()
     #clf = multiclassSVM()

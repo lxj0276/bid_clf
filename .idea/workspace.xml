@@ -12,8 +12,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/bid_clf$multi_label.coverage" NAME="multi_label Coverage Results" MODIFIED="1505031259292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/bid_clf$single_label.coverage" NAME="single_label Coverage Results" MODIFIED="1504662495940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bid_clf$multi_label.coverage" NAME="multi_label Coverage Results" MODIFIED="1505039399616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bid_clf$single_label.coverage" NAME="single_label Coverage Results" MODIFIED="1505034576517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bid_clf$multi_label_xiaochao.coverage" NAME="multi_label_xiaochao Coverage Results" MODIFIED="1504608820718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bid$hello.coverage" NAME="hello Coverage Results" MODIFIED="1503483581497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bid_clf$multi_label__1_.coverage" NAME="multi_label (1) Coverage Results" MODIFIED="1504660213426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -25,6 +25,7 @@
     <SUITE FILE_PATH="coverage/bid$cluster.coverage" NAME="cluster Coverage Results" MODIFIED="1503731265535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bid_clf$mlb.coverage" NAME="mlb Coverage Results" MODIFIED="1504609564660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bid$base.coverage" NAME="base Coverage Results" MODIFIED="1504353391836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scipy/sparse" />
+    <SUITE FILE_PATH="coverage/bid_clf$tets_word2vec.coverage" NAME="tets_word2vec Coverage Results" MODIFIED="1505041163163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bid$search.coverage" NAME="search Coverage Results" MODIFIED="1503483793380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bid$bid_cluster.coverage" NAME="bid_cluster Coverage Results" MODIFIED="1504353522396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -41,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/bid_cluster.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
                 <element signature="e#15#27#0" expanded="true" />
               </folding>
@@ -59,17 +60,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="multi_label.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="multi_label.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/multi_label.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33995038">
-              <caret line="240" column="50" selection-start-line="240" selection-start-column="50" selection-end-line="240" selection-end-column="50" />
+            <state vertical-scroll-proportion="-3.5666666">
+              <caret line="267" column="48" selection-start-line="267" selection-start-column="48" selection-end-line="267" selection-end-column="48" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
-                <marker date="1505031259225" expanded="true" signature="949:982" placeholder="..." />
-                <marker date="1505031259225" expanded="true" signature="1653:1687" placeholder="..." />
-                <marker date="1505031259225" expanded="true" signature="1848:1904" placeholder="..." />
-                <marker date="1505031259225" expanded="true" signature="2109:2144" placeholder="..." />
+                <marker date="1505039399566" expanded="true" signature="949:982" placeholder="select id,ti... train" />
+                <marker date="1505039399566" expanded="true" signature="1653:1687" placeholder="alter table train... " />
+                <marker date="1505039399566" expanded="true" signature="1848:1904" placeholder="update train... " />
+                <marker date="1505039399566" expanded="true" signature="2109:2144" placeholder="select id,se... train" />
               </folding>
             </state>
           </provider>
@@ -79,16 +80,15 @@
         <entry file="file://$PROJECT_DIR$/single_label.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="133" column="19" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="19" />
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
-                <marker date="1504662662642" expanded="true" signature="860:886" placeholder="..." />
-                <marker date="1504662662642" expanded="true" signature="1557:1591" placeholder="..." />
-                <marker date="1504662662642" expanded="true" signature="1752:1779" placeholder="..." />
-                <marker date="1504662662642" expanded="true" signature="1752:1783" placeholder="..." />
-                <marker date="1504662662642" expanded="true" signature="1752:1794" placeholder="..." />
-                <marker date="1504662662642" expanded="true" signature="1752:1808" placeholder="..." />
-                <marker date="1504662662642" expanded="true" signature="2013:2048" placeholder="..." />
+                <marker date="1505034536305" expanded="true" signature="860:886" placeholder="..." />
+                <marker date="1505034536305" expanded="true" signature="1557:1591" placeholder="..." />
+                <marker date="1505034536305" expanded="true" signature="1752:1779" placeholder="..." />
+                <marker date="1505034536305" expanded="true" signature="1752:1783" placeholder="..." />
+                <marker date="1505034536305" expanded="true" signature="1752:1794" placeholder="..." />
+                <marker date="1505034536305" expanded="true" signature="1752:1808" placeholder="..." />
+                <marker date="1505034536305" expanded="true" signature="2013:2048" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -99,6 +99,48 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="smart_open_lib.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/smart_open/smart_open_lib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="643" column="0" selection-start-line="643" selection-start-column="0" selection-end-line="643" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tets_word2vec.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tets_word2vec.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2784091">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="e#14#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="segment_data.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/result/segment_data.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="keyedvectors.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/gensim/models/keyedvectors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="289" column="8" selection-start-line="289" selection-start-column="8" selection-end-line="289" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -153,6 +195,8 @@
         <option value="$PROJECT_DIR$/mlb.py" />
         <option value="$PROJECT_DIR$/single_label.py" />
         <option value="$PROJECT_DIR$/multi_label.py" />
+        <option value="$PROJECT_DIR$/result/segment_data.txt" />
+        <option value="$PROJECT_DIR$/tets_word2vec.py" />
       </list>
     </option>
   </component>
@@ -192,7 +236,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -211,14 +255,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bid_clf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bid_clf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="result" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bid_clf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bid_clf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="result" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../multi-class-text-classification-cnn-master" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -239,14 +315,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.multi_label">
+  <component name="RunManager" selected="Python.tets_word2vec">
     <configuration default="false" name="single_label" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="D:\Python36\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\Alicewo\AppData\Local\Programs\Python\Python36\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -308,6 +384,24 @@
       <module name="bid" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multi_label.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tets_word2vec" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Alicewo\AppData\Local\Programs\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bid" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tets_word2vec.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -523,19 +617,21 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.multi_label" />
       <item index="1" class="java.lang.String" itemvalue="Python.single_label" />
       <item index="2" class="java.lang.String" itemvalue="Python.multi_label_xiaochao" />
       <item index="3" class="java.lang.String" itemvalue="Python.mlb" />
       <item index="4" class="java.lang.String" itemvalue="Python.multi_label (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Python.tets_word2vec" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.single_label" />
-        <item index="1" class="java.lang.String" itemvalue="Python.multi_label (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.mlb" />
-        <item index="3" class="java.lang.String" itemvalue="Python.multi_label_xiaochao" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.tets_word2vec" />
+        <item index="1" class="java.lang.String" itemvalue="Python.single_label" />
+        <item index="2" class="java.lang.String" itemvalue="Python.multi_label (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.mlb" />
+        <item index="4" class="java.lang.String" itemvalue="Python.multi_label_xiaochao" />
       </list>
     </recent_temporary>
   </component>
@@ -553,7 +649,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14494875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -562,11 +658,11 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31968504" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31968504" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -601,97 +697,40 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/multi_label.py</url>
-          <line>239</line>
+          <line>260</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/multi_label.py</url>
-          <line>240</line>
+          <line>261</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/tets_word2vec.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/tets_word2vec.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/tets_word2vec.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/tets_word2vec.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="19" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/multi_label.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-            <marker date="1505031259225" expanded="true" signature="949:982" placeholder="..." />
-            <marker date="1505031259225" expanded="true" signature="1653:1687" placeholder="..." />
-            <marker date="1505031259225" expanded="true" signature="1848:1904" placeholder="..." />
-            <marker date="1505031259225" expanded="true" signature="2109:2144" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/single_label.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="133" column="19" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-            <marker date="1504662662642" expanded="true" signature="860:886" placeholder="..." />
-            <marker date="1504662662642" expanded="true" signature="1557:1591" placeholder="..." />
-            <marker date="1504662662642" expanded="true" signature="1752:1779" placeholder="..." />
-            <marker date="1504662662642" expanded="true" signature="1752:1783" placeholder="..." />
-            <marker date="1504662662642" expanded="true" signature="1752:1794" placeholder="..." />
-            <marker date="1504662662642" expanded="true" signature="1752:1808" placeholder="..." />
-            <marker date="1504662662642" expanded="true" signature="2013:2048" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/psql_manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-          <folding>
-            <marker date="1504433882219" expanded="true" signature="978:1002" placeholder="..." />
-            <marker date="1504433882219" expanded="true" signature="1244:1277" placeholder="..." />
-            <marker date="1504433882219" expanded="true" signature="1754:1787" placeholder="..." />
-            <marker date="1504433882219" expanded="true" signature="2321:2343" placeholder="..." />
-            <marker date="1504433882219" expanded="true" signature="2321:2344" placeholder="..." />
-            <marker date="1504433882219" expanded="true" signature="2321:2373" placeholder="..." />
-            <marker date="1504433882219" expanded="true" signature="2321:2374" placeholder="..." />
-            <marker date="1504433882219" expanded="true" signature="2321:2378" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cluster.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -842,24 +881,6 @@
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/feature_selection/univariate_selection.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/pipeline.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/metrics/classification.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bid_cluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/psql_manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -891,28 +912,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/single_label.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="133" column="19" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-            <marker date="1504662662642" expanded="true" signature="860:886" placeholder="..." />
-            <marker date="1504662662642" expanded="true" signature="1557:1591" placeholder="..." />
-            <marker date="1504662662642" expanded="true" signature="1752:1779" placeholder="..." />
-            <marker date="1504662662642" expanded="true" signature="1752:1783" placeholder="..." />
-            <marker date="1504662662642" expanded="true" signature="1752:1794" placeholder="..." />
-            <marker date="1504662662642" expanded="true" signature="1752:1808" placeholder="..." />
-            <marker date="1504662662642" expanded="true" signature="2013:2048" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/model_selection/_split.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33262712">
           <caret line="1903" column="4" selection-start-line="1903" selection-start-column="4" selection-end-line="1903" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single_label.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <marker date="1505034536305" expanded="true" signature="860:886" placeholder="..." />
+            <marker date="1505034536305" expanded="true" signature="1557:1591" placeholder="..." />
+            <marker date="1505034536305" expanded="true" signature="1752:1779" placeholder="..." />
+            <marker date="1505034536305" expanded="true" signature="1752:1783" placeholder="..." />
+            <marker date="1505034536305" expanded="true" signature="1752:1794" placeholder="..." />
+            <marker date="1505034536305" expanded="true" signature="1752:1808" placeholder="..." />
+            <marker date="1505034536305" expanded="true" signature="2013:2048" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/gensim/models/keyedvectors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="289" column="8" selection-start-line="289" selection-start-column="8" selection-end-line="289" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_result.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32386363">
+          <caret line="6" column="83" selection-start-line="6" selection-start-column="83" selection-end-line="6" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/gensim/models/word2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22443181">
+          <caret line="1481" column="26" selection-start-line="1481" selection-start-column="26" selection-end-line="1481" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/nb/nb-3000.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.8579545">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/segment_data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/smart_open/smart_open_lib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="643" column="0" selection-start-line="643" selection-start-column="0" selection-end-line="643" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bid_cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -926,14 +1004,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/multi_label.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33995038">
-          <caret line="240" column="50" selection-start-line="240" selection-start-column="50" selection-end-line="240" selection-end-column="50" />
+        <state vertical-scroll-proportion="-3.5666666">
+          <caret line="267" column="48" selection-start-line="267" selection-start-column="48" selection-end-line="267" selection-end-column="48" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1505031259225" expanded="true" signature="949:982" placeholder="..." />
-            <marker date="1505031259225" expanded="true" signature="1653:1687" placeholder="..." />
-            <marker date="1505031259225" expanded="true" signature="1848:1904" placeholder="..." />
-            <marker date="1505031259225" expanded="true" signature="2109:2144" placeholder="..." />
+            <marker date="1505039399566" expanded="true" signature="949:982" placeholder="select id,ti... train" />
+            <marker date="1505039399566" expanded="true" signature="1653:1687" placeholder="alter table train... " />
+            <marker date="1505039399566" expanded="true" signature="1848:1904" placeholder="update train... " />
+            <marker date="1505039399566" expanded="true" signature="2109:2144" placeholder="select id,se... train" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tets_word2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2784091">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#29#0" expanded="true" />
           </folding>
         </state>
       </provider>

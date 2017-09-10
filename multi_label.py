@@ -100,10 +100,11 @@ vectorizer = None
 
 def doc_to_vector(X_train, X_test):
     t0 = time()
-    global vectorizer
+    global vectorizer, feature_names
     vectorizer = TfidfVectorizer(sublinear_tf=True, max_df=0.5, stop_words='english')
     X_train = vectorizer.fit_transform(X_train)
     X_test = vectorizer.transform(X_test)
+    feature_names = vectorizer.get_feature_names()
     duration = time() - t0
     print("doc_to_vector done in %fs" % (duration))
     print("train:n_samples: %d, n_features: %d" % X_train.shape)
@@ -116,11 +117,19 @@ ch2 = None
 
 def select_feature(feature_num, X_train, y_train, X_test):
     t0 = time()
-    global ch2
+    global ch2, feature_names
+
     ch2 = SelectKBest(chi2, k=feature_num)
     X_train = ch2.fit_transform(X_train, y_train)
     X_test = ch2.transform(X_test)
     print("select_feature done in %fs" % (time() - t0))
+    # 得到选择的特征
+    if feature_names:
+        # keep selected feature names
+        feature_names = [feature_names[i] for i
+                         in ch2.get_support(indices=True)]
+    for name in feature_names:
+        print(name, )
     return X_train, X_test
 
 
@@ -143,6 +152,18 @@ def svc():
 def nb_classifier():
     clf = MultinomialNB(alpha=.01)
     return clf
+
+
+def knn():
+    from sklearn import neighbors
+    knn = neighbors.KNeighborsRegressor()
+    return knn
+
+
+def random_forest():
+    from sklearn import ensemble
+    rf = ensemble.RandomForestRegressor(n_estimators=17)  # 这里使用20个决策树
+    return rf
 
 
 # 4.评估
@@ -244,9 +265,10 @@ if __name__ == '__main__':
     X_train, X_test = select_feature(1000, X_train, y_train, X_test)
     #  训练
     # clf = OneVsRestClassifier(linear_svc_classifier(), n_jobs=-1)
-    clf = OneVsRestClassifier(nb_classifier())
+    # clf = OneVsRestClassifier(nb_classifier())
     # clf = OneVsRestClassifier(svc())
-
+    # clf = OneVsRestClassifier(random_forest())
+    clf = OneVsRestClassifier(nb_classifier())
     clf.fit(X_train, y_train)
     # 测试集测试
     pred = clf.predict(X_test)
