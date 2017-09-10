@@ -124,20 +124,24 @@ def select_feature(feature_num, X_train, y_train, X_test):
 
 # 3.分类
 def linear_svc_classifier():
-    #clf = Pipeline([('feature_selection', SelectFromModel(LinearSVC(penalty="l1", dual=False, tol=1e-3))),('classification', LinearSVC(penalty="l2"))])
-    #clf = Pipeline([('classification', LinearSVC(penalty="l2"))])
+    # clf = Pipeline([('feature_selection', SelectFromModel(LinearSVC(penalty="l1", dual=False, tol=1e-3))),('classification', LinearSVC(penalty="l2"))])
+    # clf = Pipeline([('classification', LinearSVC(penalty="l2"))])
     clf = LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
-     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
-     multi_class='ovr', penalty='l2', random_state=0, tol=0.0001,
-     verbose=0)
+                    intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+                    multi_class='ovr', penalty='l2', random_state=0, tol=0.0001,
+                    verbose=0)
     return clf
+
+
 def multiclassSVM():
     clf = OneVsRestClassifier(SVC())
     return clf
 
+
 def nb_classifier():
     clf = MultinomialNB(alpha=.01)
     return clf
+
 
 # 4.评估
 # Benchmark classifiers
@@ -199,13 +203,16 @@ def transform_test(predict_data):
     return test_sf
 
 
-def predict_titles(psql,clf):
+def predict_titles(psql, clf):
     ids, titles = get_predict_data(psql)
     corpus = seg(titles)
     test_sf = transform_test(corpus)
     pred = clf.predict(test_sf)
     for i in range(len(ids)):
-        print(titles[i],pred[i])
+        print(titles[i], pred[i])
+
+
+
 
 
 if __name__ == '__main__':
@@ -218,16 +225,15 @@ if __name__ == '__main__':
 
 
     ids, segments, labels = get_seg(psql)
-    X_train, X_test, y_train, y_test = cross_validation.train_test_split(segments, labels, test_size=0.2, random_state=0)
+    X_train, X_test, y_train, y_test = cross_validation.train_test_split(segments, labels, test_size=0.2,
+                                                                         random_state=0)
 
     X_train, X_test = doc_to_vector(X_train, X_test)
 
     X_train, X_test = select_feature(1000, X_train, y_train, X_test)
 
     clf = linear_svc_classifier()
-    #clf = multiclassSVM()
-    #clf = nb_classifier()
+    # clf = multiclassSVM()
+    # clf = nb_classifier()
     benchmark(clf, X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test)
-    #predict_titles(psql,clf)
-
-
+    # predict_titles(psql,clf)
