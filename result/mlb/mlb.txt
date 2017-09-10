@@ -1,0 +1,43 @@
+D:\Python36\python.exe E:/Python/bid_clf/multi_label.py
+Opened database successfully
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\ADMINI~1\AppData\Local\Temp\jieba.cache
+Loading model cost 1.205 seconds.
+Prefix dict has been built succesfully.
+样本数目: 78909, 空间转换后词特征数目: 50086
+doc data to vectorizer by weight tfidf done. time cost : 2.116404 s
+feature selection done in 0.266174s
+样本数目为：78909
+类别数目为：17
+样本数目: 60228, 空间转换后词特征数目:50086
+测试集空间向量转换耗时： 1.498988 s
+样本数目: 6000, 空间转换后词特征数目:50086
+测试集空间向量转换耗时： 0.139096 s
+====================
+LinearSVC with L1-based feature selection
+0.431819444444
+             precision    recall  f1-score   support
+
+          0       0.69      0.52      0.60       423
+          1       0.68      0.27      0.39       955
+          2       0.73      0.56      0.64       333
+          3       0.71      0.40      0.52       351
+          4       0.82      0.60      0.69       247
+          5       0.79      0.55      0.65       323
+          6       0.81      0.73      0.77       314
+          7       0.67      0.25      0.36       452
+          8       0.84      0.74      0.79       336
+          9       0.65      0.30      0.41       837
+         10       0.54      0.19      0.28       764
+         11       0.80      0.57      0.67       425
+         12       0.73      0.56      0.64       343
+         13       0.62      0.29      0.39       387
+         14       0.75      0.52      0.61       523
+         15       0.75      0.50      0.60       454
+         16       0.82      0.48      0.60       371
+
+avg / total       0.71      0.43      0.52      7838
+
+0.943656862745
+
+Process finished with exit code 0

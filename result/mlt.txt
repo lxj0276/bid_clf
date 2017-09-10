@@ -1,0 +1,80 @@
+D:\Python36\python.exe E:/Python/bid_clf/multi_label.py
+Opened database successfully
+select id,segment,labels from train;
+doc_to_vector done in 2.131412s
+train:n_samples: 52982, n_features: 46938
+test:n_samples: 13246, n_features: 46938
+[[0 0 0 ..., 0 0 0]
+ [0 1 0 ..., 0 0 0]
+ [0 0 0 ..., 0 0 0]
+ ..., 
+ [0 0 0 ..., 0 0 0]
+ [0 0 0 ..., 0 0 0]
+ [0 0 0 ..., 0 0 0]] [[0 0 0 ..., 0 1 0]
+ [0 0 0 ..., 0 0 0]
+ [0 0 0 ..., 0 0 0]
+ ..., 
+ [0 0 0 ..., 0 0 0]
+ [0 0 0 ..., 0 0 0]
+ [0 0 0 ..., 0 0 0]]
+select_feature done in 0.222146s
+________________________________________________________________________________
+Training: 
+OneVsRestClassifier(estimator=LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=0, tol=0.0001,
+     verbose=0),
+          n_jobs=-1)
+train time: 5.241s
+test time:  0.028s
+[[0 0 0 ..., 0 1 0]
+ [0 0 0 ..., 0 0 0]
+ [0 0 0 ..., 0 0 0]
+ ..., 
+ [0 0 0 ..., 0 0 0]
+ [0 0 0 ..., 0 0 0]
+ [0 0 0 ..., 0 0 0]]
+[[0 0 0 ..., 0 1 0]
+ [0 0 0 ..., 0 0 0]
+ [0 0 0 ..., 0 0 0]
+ ..., 
+ [0 0 0 ..., 0 0 0]
+ [0 0 0 ..., 0 0 0]
+ [0 0 0 ..., 0 0 0]]
+accuracy:   0.382
+dimensionality: 7000
+density: 0.857723
+classification report:
+             precision    recall  f1-score   support
+
+          0       0.70      0.53      0.61       905
+          1       0.69      0.35      0.46      2079
+          2       0.80      0.55      0.65       802
+          3       0.69      0.40      0.51       809
+          4       0.86      0.65      0.74       702
+          5       0.81      0.56      0.66       730
+          6       0.87      0.79      0.83       860
+          7       0.64      0.27      0.38      1056
+          8       0.87      0.74      0.80       714
+          9       0.62      0.34      0.44      1660
+         10       0.59      0.28      0.38      1716
+         11       0.76      0.60      0.67       783
+         12       0.72      0.59      0.65       673
+         13       0.63      0.33      0.43       909
+         14       0.71      0.55      0.62      1046
+         15       0.76      0.53      0.62      1012
+         16       0.79      0.54      0.64       884
+
+avg / total       0.72      0.47      0.56     17340
+
+confusion matrix:
+Traceback (most recent call last):
+  File "E:/Python/bid_clf/multi_label.py", line 254, in <module>
+    benchmark(clf, X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test)
+  File "E:/Python/bid_clf/multi_label.py", line 175, in benchmark
+    print(metrics.confusion_matrix(y_test, pred))
+  File "D:\Python36\lib\site-packages\sklearn\metrics\classification.py", line 252, in confusion_matrix
+    raise ValueError("%s is not supported" % y_type)
+ValueError: multilabel-indicator is not supported
+
+Process finished with exit code 1
