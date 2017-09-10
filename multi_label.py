@@ -232,8 +232,10 @@ if __name__ == '__main__':
     X_train, X_test = doc_to_vector(X_train, X_test)
     mlb = MultiLabelBinarizer()
     y_train = mlb.fit_transform(y_train)
-    y_test = mlb.fit_transform(y_test)#将y_test转换为矩阵
-    X_train, X_test = select_feature(7000, X_train, y_train, X_test)
+    print(mlb.classes_)
+    y_test = mlb.transform(y_test)#将y_test转换为矩阵
+    print(mlb.classes_)
+    X_train, X_test = select_feature(1000, X_train, y_train, X_test)
     # # 训练
     clf = OneVsRestClassifier(linear_svc_classifier(), n_jobs=-1)
     #clf = OneVsRestClassifier(nb_classifier(), n_jobs=-1)
