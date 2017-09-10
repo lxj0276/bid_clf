@@ -16,7 +16,6 @@ from sklearn.preprocessing import MultiLabelBinarizer
 import numpy as np
 
 
-
 # 1.获取数据
 #######################
 # 加载停用词词典
@@ -127,20 +126,24 @@ def select_feature(feature_num, X_train, y_train, X_test):
 
 # 3.分类
 def linear_svc_classifier():
-    #clf = Pipeline([('feature_selection', SelectFromModel(LinearSVC(penalty="l1", dual=False, tol=1e-3))),('classification', LinearSVC(penalty="l2"))])
-    #clf = Pipeline([('classification', LinearSVC(penalty="l2"))])
+    # clf = Pipeline([('feature_selection', SelectFromModel(LinearSVC(penalty="l1", dual=False, tol=1e-3))),('classification', LinearSVC(penalty="l2"))])
+    # clf = Pipeline([('classification', LinearSVC(penalty="l2"))])
     clf = LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
-     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
-     multi_class='ovr', penalty='l2', random_state=0, tol=0.0001,
-     verbose=0)
+                    intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+                    multi_class='ovr', penalty='l2', random_state=0, tol=0.0001,
+                    verbose=0)
     return clf
+
+
 def svc():
     clf = SVC()
     return clf
 
+
 def nb_classifier():
     clf = MultinomialNB(alpha=.01)
     return clf
+
 
 # 4.评估
 # Benchmark classifiers
@@ -204,7 +207,7 @@ def transform_test(predict_data):
     return test_sf
 
 
-def predict_titles(psql,clf):
+def predict_titles(psql, clf):
     ids, titles = get_predict_data(psql)
     corpus = seg(titles)
     test_sf = transform_test(corpus)
@@ -215,7 +218,7 @@ def predict_titles(psql,clf):
         label = " ".join(map(str, label))
         if label == "":  # if the label is empty
             label = "**********"
-        print(titles[i],label)
+        print(titles[i], "，" + label)
 
 
 if __name__ == '__main__':
@@ -226,26 +229,29 @@ if __name__ == '__main__':
     # insert_seg(psql,ids,corpus)
     # psql.close()
 
-
+    # 获取数据
     ids, segments, labels = get_seg(psql)
+    # 划分训练集 测试集
     X_train, X_test, y_train, y_test = train_test_split(segments, labels, test_size=0.2, random_state=0)
+    # 空间向量转换
     X_train, X_test = doc_to_vector(X_train, X_test)
+    # 二则化 类标签
     mlb = MultiLabelBinarizer()
     y_train = mlb.fit_transform(y_train)
+    y_test = mlb.transform(y_test)  # 将y_test转换为矩阵
     print(mlb.classes_)
-    y_test = mlb.transform(y_test)#将y_test转换为矩阵
-    print(mlb.classes_)
+    # 特征选择
     X_train, X_test = select_feature(1000, X_train, y_train, X_test)
-    # # 训练
-    clf = OneVsRestClassifier(linear_svc_classifier(), n_jobs=-1)
-    #clf = OneVsRestClassifier(nb_classifier(), n_jobs=-1)
-    #clf = OneVsRestClassifier(svc())
+    #  训练
+    # clf = OneVsRestClassifier(linear_svc_classifier(), n_jobs=-1)
+    clf = OneVsRestClassifier(nb_classifier())
+    # clf = OneVsRestClassifier(svc())
 
     clf.fit(X_train, y_train)
-    #测试集测试
+    # 测试集测试
     pred = clf.predict(X_test)
     print(np.mean(pred == y_test))
-
+    print(metrics.classification_report(y_test, pred))
     # for i in range(pred.shape[0]):
     #     label = list(mlb.classes_[np.where(pred[i, :] == 1)[0]])
     #     label = " ".join(map(str, label))
@@ -253,6 +259,5 @@ if __name__ == '__main__':
     #         label = "103"
     #     print( str(i) + "," + label + "\n")
 
-    #benchmark(clf, X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test)
+    # benchmark(clf, X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test)
     predict_titles(psql, clf)
-
